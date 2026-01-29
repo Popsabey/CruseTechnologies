@@ -1,9 +1,11 @@
 import React from 'react';
-import { ArrowRight, Bot, MessageSquare } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import hessieLogo from '../assets/hessie.png';
+import tessaLogo from '../assets/tessa.png';
 
-const iconMap = {
-    hessie_icon: Bot,
-    tessa_icon: MessageSquare
+const logoMap = {
+    hessie_icon: hessieLogo,
+    tessa_icon: tessaLogo
 };
 
 const ProductShowcase = ({ content }) => {
@@ -19,15 +21,15 @@ const ProductShowcase = ({ content }) => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {items.map((product) => {
-                        const Icon = iconMap[product.icon] || Bot;
+                        const ProductLogo = logoMap[product.icon];
 
                         return (
-                            <div key={product.id} className="group relative bg-white rounded-2xl p-10 shadow-stripe-sm hover:shadow-stripe transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                            <div key={product.id} className="group relative bg-white rounded-2xl p-10 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
 
                                 <div className="relative z-10">
-                                    <div className="w-14 h-14 bg-blurple/10 rounded-xl flex items-center justify-center text-blurple mb-8">
-                                        <Icon size={28} />
+                                    <div className="w-16 h-16 bg-transparent flex items-center justify-start mb-8">
+                                        {ProductLogo && <img src={ProductLogo} alt={`${product.title} logo`} className="w-full h-full object-contain" />}
                                     </div>
 
                                     <h3 className="text-2xl font-bold text-slate-900 mb-3">{product.title}</h3>

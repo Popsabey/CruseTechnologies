@@ -15,17 +15,14 @@ const Hero = ({ content }) => {
             <div className="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
 
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 leading-[1.1] text-white">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8 leading-[1.1] text-white">
                         {headline}
                     </h1>
                     <p className="text-xl md:text-2xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
                         {subheadline}
                     </p>
-                    <p className="text-sm font-semibold text-accent-teal uppercase tracking-widest mb-10">
-                        {supporting_text}
-                    </p>
 
-                    <div className="flex flex-wrap gap-4 justify-center">
+                    <div className="flex flex-wrap gap-4 justify-center mb-10">
                         {actions.map((action) => (
                             <a
                                 key={action.label}
@@ -37,6 +34,10 @@ const Hero = ({ content }) => {
                             </a>
                         ))}
                     </div>
+
+                    <p className="text-xs md:text-sm font-semibold text-slate-400 uppercase tracking-widest">
+                        {supporting_text}
+                    </p>
                 </div>
 
             </div>

@@ -12,7 +12,7 @@ const WhyChooseUs = ({ content }) => {
             <div className="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div>
-                        <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white">
                             A complete toolkit for the modern web.
                         </h2>
                         <p className="text-lg text-slate-300 mb-10 max-w-lg">
@@ -27,7 +27,7 @@ const WhyChooseUs = ({ content }) => {
                                     <CheckCircle2 className="w-6 h-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold mb-1">{item.title}</h3>
+                                    <h3 className="text-lg font-bold mb-1 text-white">{item.title}</h3>
                                     <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
                                 </div>
                             </div>

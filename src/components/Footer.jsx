@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
 const iconMap = {
@@ -14,7 +15,8 @@ const Footer = ({ content }) => {
         <footer className="bg-slate-50 pt-20 pb-10">
             <div className="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row justify-between items-center mb-10">
-                    <div className="mb-6 md:mb-0">
+                    <div className="mb-6 md:mb-0 flex items-center gap-3">
+                        <img src={logo} alt="CruseTech Logo" className="w-8 h-8 object-contain" />
                         <span className="text-xl font-bold text-slate-900 block">CruseTech</span>
                     </div>
 
