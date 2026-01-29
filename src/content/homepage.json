@@ -37,7 +37,7 @@
                 "purpose": "Introduce value proposition",
                 "layout": "centered_with_graphic",
                 "content": {
-                    "headline": "Empowering the next billion users for maximum productivity",
+                    "headline": "Powering the next billion users for maximum productivity",
                     "subheadline": "We're at the forefront of enabling users maximize potentials through software",
                     "supporting_text": "Software solutions for teams, individuals, and enterprises.",
                     "actions": [
@@ -111,24 +111,12 @@
                 }
             },
             {
-                "id": "testimonials",
-                "type": "slider_or_grid",
-                "purpose": "Social proof",
+                "id": "about",
+                "type": "text_block",
+                "purpose": "Company description",
                 "content": {
-                    "items": [
-                        {
-                            "quote": "Cruse Technologies transformed how we handle customer inquiries. Tessa is a game changer.",
-                            "author": "Sarah Jenkins",
-                            "title": "VP of Operations",
-                            "company": "TechStream"
-                        },
-                        {
-                            "quote": "Hessie has saved our team countless hours on scheduling and admin tasks.",
-                            "author": "David Chen",
-                            "title": "Product Manager",
-                            "company": "CreativeFlow"
-                        }
-                    ]
+                    "headline": "About Us",
+                    "text": "At CruseTech, we are dedicated to building intelligent solutions that empower the next generation of businesses and individuals. Whether it's through our productivity tools or custom enterprise software, our mission is to unlock maximum potential through technology."
                 }
             },
             {
@@ -148,6 +136,27 @@
                         {
                             "title": "User-Centric Design",
                             "description": "Interfaces that are intuitive, accessible, and delightful to use."
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "testimonials",
+                "type": "slider_or_grid",
+                "purpose": "Social proof",
+                "content": {
+                    "items": [
+                        {
+                            "quote": "Cruse Technologies transformed how we handle customer inquiries. Tessa is a game changer.",
+                            "author": "Sarah Jenkins",
+                            "title": "VP of Operations",
+                            "company": "TechStream"
+                        },
+                        {
+                            "quote": "Hessie has saved our team countless hours on scheduling and admin tasks.",
+                            "author": "David Chen",
+                            "title": "Product Manager",
+                            "company": "CreativeFlow"
                         }
                     ]
                 }
@@ -175,26 +184,10 @@
                 "content": {
                     "contact": {
                         "email": "info@crusehq.com",
-                        "phone": "+1 (555) 123-4567"
+                        "phone": ""
                     },
                     "legal_links": [],
-                    "social_links": [
-                        {
-                            "label": "LinkedIn",
-                            "href": "https://linkedin.com",
-                            "icon": "linkedin"
-                        },
-                        {
-                            "label": "Twitter",
-                            "href": "https://twitter.com",
-                            "icon": "twitter"
-                        },
-                        {
-                            "label": "GitHub",
-                            "href": "https://github.com",
-                            "icon": "github"
-                        }
-                    ]
+                    "social_links": []
                 }
             }
         ],

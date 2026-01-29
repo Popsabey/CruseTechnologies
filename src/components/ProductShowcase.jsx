@@ -10,7 +10,7 @@ const ProductShowcase = ({ content }) => {
     const { items } = content;
 
     return (
-        <section id="products" className="py-32 bg-slate-50">
+        <section id="products" className="py-20 bg-slate-50">
             <div className="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Our Products</h2>

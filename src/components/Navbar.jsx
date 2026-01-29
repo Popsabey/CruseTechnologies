@@ -1,17 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Navbar = ({ content }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const { logo_text, links, actions } = content;
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <nav className="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-2' : 'bg-transparent py-4'}`}>
             <div className="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center bg-white/10 backdrop-blur-lg border border-white/20 rounded-full px-6 py-3 shadow-lg">
+                <div className={`flex justify-between items-center rounded-full px-6 py-2 ${scrolled ? '' : 'bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg'}`}>
                     {/* Logo */}
-                    <div className="flex-shrink-0 flex items-center">
-                        <span className="text-xl font-bold text-white tracking-wide">
+                    <div className="flex-shrink-0 flex items-center gap-3">
+                        <img src={logo} alt="CruseTech Logo" className="w-8 h-8 object-contain" />
+                        <span className={`text-xl font-bold tracking-wide ${scrolled ? 'text-slate-900' : 'text-white'}`}>
                             {logo_text}
                         </span>
                     </div>
@@ -22,7 +33,7 @@ const Navbar = ({ content }) => {
                             <a
                                 key={link.label}
                                 href={link.href}
-                                className="text-sm font-medium text-white/90 hover:text-white transition-colors"
+                                className={`text-sm font-medium transition-colors ${scrolled ? 'text-slate-600 hover:text-blurple' : 'text-white/90 hover:text-white'}`}
                             >
                                 {link.label}
                             </a>
@@ -32,7 +43,7 @@ const Navbar = ({ content }) => {
                                 <a
                                     key={action.label}
                                     href={action.href}
-                                    className="bg-white/20 hover:bg-white/30 text-white text-sm font-medium px-4 py-2 rounded-full transition-all"
+                                    className={`text-sm font-medium px-4 py-2 rounded-full transition-all ${scrolled ? 'bg-blurple text-white hover:bg-blurple-dark' : 'bg-white/20 hover:bg-white/30 text-white'}`}
                                 >
                                     {action.label}
                                 </a>
@@ -44,7 +55,7 @@ const Navbar = ({ content }) => {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-white hover:text-white/80 focus:outline-none"
+                            className={`focus:outline-none ${scrolled ? 'text-slate-900' : 'text-white hover:text-white/80'}`}
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -54,19 +65,19 @@ const Navbar = ({ content }) => {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="absolute top-20 left-4 right-4 bg-slate-900/95 backdrop-blur-xl rounded-2xl p-6 md:hidden shadow-2xl border border-white/10">
+                <div className="absolute top-20 left-4 right-4 bg-white/95 backdrop-blur-xl rounded-2xl p-6 md:hidden shadow-2xl border border-slate-100">
                     <div className="space-y-4">
                         {links.map((link) => (
                             <a
                                 key={link.label}
                                 href={link.href}
-                                className="block text-base font-medium text-white hover:text-blurple-light"
+                                className="block text-base font-medium text-slate-700 hover:text-blurple"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.label}
                             </a>
                         ))}
-                        <div className="pt-4 border-t border-white/10 mt-2">
+                        <div className="pt-4 border-t border-slate-100 mt-2">
                             {actions.map((action) => (
                                 <a
                                     key={action.label}

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProductShowcase from './components/ProductShowcase';
 import Features from './components/Features';
+import AboutUs from './components/AboutUs';
 import Testimonials from './components/Testimonials';
 import WhyChooseUs from './components/WhyChooseUs';
 import CTA from './components/CTA';
@@ -24,6 +25,7 @@ function App() {
         <Hero content={getSection('hero')} />
         <ProductShowcase content={getSection('product_showcase')} />
         <Features content={getSection('features')} />
+        <AboutUs content={getSection('about')} />
         <WhyChooseUs content={getSection('why_choose_us')} />
         <Testimonials content={getSection('testimonials')} />
         <CTA content={getSection('cta_footer')} />

@@ -5,7 +5,7 @@ const WhyChooseUs = ({ content }) => {
     const { items } = content;
 
     return (
-        <section className="py-32 bg-slate-900 text-white relative overflow-hidden clip-diagonal-reverse -mt-20 pt-48 pb-48">
+        <section className="py-24 bg-slate-900 text-white relative overflow-hidden clip-diagonal-reverse -mt-20 pt-40 pb-40">
             {/* Dynamic Mesh Gradient Background */}
             <div className="absolute inset-0 bg-mesh opacity-60 mix-blend-screen pointer-events-none"></div>
 
