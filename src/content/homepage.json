@@ -7,7 +7,7 @@
                 "purpose": "Primary global navigation",
                 "layout": "horizontal_sticky",
                 "content": {
-                    "logo_text": "Cruse Technologies",
+                    "logo_text": "CruseTech",
                     "links": [
                         {
                             "label": "Products",
@@ -18,24 +18,15 @@
                             "href": "#features"
                         },
                         {
-                            "label": "About Cruse Technologies",
+                            "label": "About us",
                             "href": "#about"
-                        },
-                        {
-                            "label": "Contact Us",
-                            "href": "#footer"
                         }
                     ],
                     "actions": [
                         {
-                            "label": "Sign In",
-                            "type": "secondary",
-                            "href": "#signin"
-                        },
-                        {
-                            "label": "Book a Demo",
+                            "label": "Contact Us",
                             "type": "primary",
-                            "href": "#demo"
+                            "href": "mailto:crusehq@gmail.com"
                         }
                     ]
                 }
@@ -46,24 +37,19 @@
                 "purpose": "Introduce value proposition",
                 "layout": "centered_with_graphic",
                 "content": {
-                    "headline": "We Build Intelligent Software & Apps That Empower Businesses and Users.",
-                    "subheadline": "From productivity tools like Hessie to customer success AI like Tessa — thoughtfully crafted tech that solves real problems.",
+                    "headline": "Empowering the next billion users for maximum productivity",
+                    "subheadline": "We're at the forefront of enabling users maximize potentials through software",
                     "supporting_text": "Software solutions for teams, individuals, and enterprises.",
                     "actions": [
                         {
-                            "label": "Explore Our Products",
+                            "label": "Contact Us",
                             "type": "primary",
-                            "href": "#products"
-                        },
-                        {
-                            "label": "Request a Demo",
-                            "type": "secondary",
-                            "href": "#demo"
+                            "href": "mailto:crusehq@gmail.com"
                         }
                     ]
                 },
                 "visuals": {
-                    "placeholder": "hero_illustration_software_dashboards"
+                    "placeholder": ""
                 }
             },
             {
@@ -78,8 +64,8 @@
                             "description": "AI-powered assistant boosting productivity, scheduling & workflow.",
                             "icon": "hessie_icon",
                             "action": {
-                                "label": "Learn More",
-                                "href": "/hessie"
+                                "label": "Visit Website",
+                                "href": "https://gethessie.com"
                             }
                         },
                         {
@@ -88,18 +74,8 @@
                             "description": "Automate support conversations with AI that speaks human.",
                             "icon": "tessa_icon",
                             "action": {
-                                "label": "Explore Tessa",
-                                "href": "/tessa"
-                            }
-                        },
-                        {
-                            "id": "future",
-                            "title": "Coming Soon",
-                            "description": "More innovation on the horizon.",
-                            "icon": "future_icon",
-                            "action": {
-                                "label": "Stay Updated",
-                                "href": "#newsletter"
+                                "label": "Visit Website",
+                                "href": "https://tessahq.com"
                             }
                         }
                     ]
@@ -185,14 +161,9 @@
                     "sub_text": "Talk with our product experts.",
                     "actions": [
                         {
-                            "label": "Book a Consultation",
+                            "label": "Contact Us",
                             "type": "primary",
-                            "href": "#contact"
-                        },
-                        {
-                            "label": "Contact Sales",
-                            "type": "secondary",
-                            "href": "#sales"
+                            "href": "mailto:crusehq@gmail.com"
                         }
                     ]
                 }
@@ -203,19 +174,10 @@
                 "purpose": "Legal and contact",
                 "content": {
                     "contact": {
-                        "email": "contact@crusetechnologies.com",
+                        "email": "info@crusehq.com",
                         "phone": "+1 (555) 123-4567"
                     },
-                    "legal_links": [
-                        {
-                            "label": "Privacy Policy",
-                            "href": "/privacy"
-                        },
-                        {
-                            "label": "Terms of Use",
-                            "href": "/terms"
-                        }
-                    ],
+                    "legal_links": [],
                     "social_links": [
                         {
                             "label": "LinkedIn",
@@ -237,8 +199,8 @@
             }
         ],
         "seo": {
-            "meta_title": "Cruse Technologies – Software, AI Tools & Apps for Business & Consumers",
-            "meta_description": "Cruse Technologies builds productivity apps, AI solutions like Hessie and Tessa, and custom software that empowers businesses and individuals.",
+            "meta_title": "CruseTech – Software, AI Tools & Apps for Business & Consumers",
+            "meta_description": "CruseTech builds productivity apps, AI solutions like Hessie and Tessa, and custom software that empowers businesses and individuals.",
             "accessibility": [
                 "high_contrast",
                 "screen_reader_support",

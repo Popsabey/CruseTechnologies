@@ -4,6 +4,25 @@
 
 @layer base {
   body {
-    @apply antialiased text-slate-800 bg-white;
+    @apply antialiased text-slate-600 bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-slate-900 tracking-tight;
+  }
+}
+
+@layer utilities {
+  .clip-diagonal {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  .clip-diagonal-reverse {
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   }
 }
