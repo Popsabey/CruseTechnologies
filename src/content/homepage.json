@@ -1,0 +1,249 @@
+{
+    "homepage": {
+        "sections": [
+            {
+                "id": "navbar",
+                "type": "navigation",
+                "purpose": "Primary global navigation",
+                "layout": "horizontal_sticky",
+                "content": {
+                    "logo_text": "Cruse Technologies",
+                    "links": [
+                        {
+                            "label": "Products",
+                            "href": "#products"
+                        },
+                        {
+                            "label": "Solutions",
+                            "href": "#features"
+                        },
+                        {
+                            "label": "About Cruse Technologies",
+                            "href": "#about"
+                        },
+                        {
+                            "label": "Contact Us",
+                            "href": "#footer"
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "label": "Sign In",
+                            "type": "secondary",
+                            "href": "#signin"
+                        },
+                        {
+                            "label": "Book a Demo",
+                            "type": "primary",
+                            "href": "#demo"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "hero",
+                "type": "hero",
+                "purpose": "Introduce value proposition",
+                "layout": "centered_with_graphic",
+                "content": {
+                    "headline": "We Build Intelligent Software & Apps That Empower Businesses and Users.",
+                    "subheadline": "From productivity tools like Hessie to customer success AI like Tessa — thoughtfully crafted tech that solves real problems.",
+                    "supporting_text": "Software solutions for teams, individuals, and enterprises.",
+                    "actions": [
+                        {
+                            "label": "Explore Our Products",
+                            "type": "primary",
+                            "href": "#products"
+                        },
+                        {
+                            "label": "Request a Demo",
+                            "type": "secondary",
+                            "href": "#demo"
+                        }
+                    ]
+                },
+                "visuals": {
+                    "placeholder": "hero_illustration_software_dashboards"
+                }
+            },
+            {
+                "id": "product_showcase",
+                "type": "grid_3_col",
+                "purpose": "Showcase products",
+                "content": {
+                    "items": [
+                        {
+                            "id": "hessie",
+                            "title": "Hessie — Work Assistant",
+                            "description": "AI-powered assistant boosting productivity, scheduling & workflow.",
+                            "icon": "hessie_icon",
+                            "action": {
+                                "label": "Learn More",
+                                "href": "/hessie"
+                            }
+                        },
+                        {
+                            "id": "tessa",
+                            "title": "Tessa — Customer Support AI",
+                            "description": "Automate support conversations with AI that speaks human.",
+                            "icon": "tessa_icon",
+                            "action": {
+                                "label": "Explore Tessa",
+                                "href": "/tessa"
+                            }
+                        },
+                        {
+                            "id": "future",
+                            "title": "Coming Soon",
+                            "description": "More innovation on the horizon.",
+                            "icon": "future_icon",
+                            "action": {
+                                "label": "Stay Updated",
+                                "href": "#newsletter"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "features",
+                "type": "icon_grid",
+                "purpose": "Communicate strengths",
+                "content": {
+                    "items": [
+                        {
+                            "title": "Custom Software & App Development",
+                            "description": "Tailored solutions built for your specific business needs.",
+                            "icon": "code_icon"
+                        },
+                        {
+                            "title": "AI Solutions & Automation",
+                            "description": "Leveraging cutting-edge AI to automate complex workflows.",
+                            "icon": "cpu_icon"
+                        },
+                        {
+                            "title": "Productivity Tools",
+                            "description": "Tools designed to streamline operations and save time.",
+                            "icon": "chart_icon"
+                        },
+                        {
+                            "title": "Customer Success Platforms",
+                            "description": "Enhancing customer relationships through intelligent engagement.",
+                            "icon": "people_icon"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "testimonials",
+                "type": "slider_or_grid",
+                "purpose": "Social proof",
+                "content": {
+                    "items": [
+                        {
+                            "quote": "Cruse Technologies transformed how we handle customer inquiries. Tessa is a game changer.",
+                            "author": "Sarah Jenkins",
+                            "title": "VP of Operations",
+                            "company": "TechStream"
+                        },
+                        {
+                            "quote": "Hessie has saved our team countless hours on scheduling and admin tasks.",
+                            "author": "David Chen",
+                            "title": "Product Manager",
+                            "company": "CreativeFlow"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "why_choose_us",
+                "type": "list_3_point",
+                "purpose": "Differentiators",
+                "content": {
+                    "items": [
+                        {
+                            "title": "Proven Tech Expertise",
+                            "description": "Years of experience building scalable, robust software solutions."
+                        },
+                        {
+                            "title": "Fast Turn-Around",
+                            "description": "Agile methodologies that ensure rapid delivery without compromising quality."
+                        },
+                        {
+                            "title": "User-Centric Design",
+                            "description": "Interfaces that are intuitive, accessible, and delightful to use."
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "cta_footer",
+                "type": "centered_box",
+                "purpose": "Final conversion",
+                "content": {
+                    "headline": "Ready to Elevate Your Tech Experience?",
+                    "sub_text": "Talk with our product experts.",
+                    "actions": [
+                        {
+                            "label": "Book a Consultation",
+                            "type": "primary",
+                            "href": "#contact"
+                        },
+                        {
+                            "label": "Contact Sales",
+                            "type": "secondary",
+                            "href": "#sales"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "footer",
+                "type": "columns",
+                "purpose": "Legal and contact",
+                "content": {
+                    "contact": {
+                        "email": "contact@crusetechnologies.com",
+                        "phone": "+1 (555) 123-4567"
+                    },
+                    "legal_links": [
+                        {
+                            "label": "Privacy Policy",
+                            "href": "/privacy"
+                        },
+                        {
+                            "label": "Terms of Use",
+                            "href": "/terms"
+                        }
+                    ],
+                    "social_links": [
+                        {
+                            "label": "LinkedIn",
+                            "href": "https://linkedin.com",
+                            "icon": "linkedin"
+                        },
+                        {
+                            "label": "Twitter",
+                            "href": "https://twitter.com",
+                            "icon": "twitter"
+                        },
+                        {
+                            "label": "GitHub",
+                            "href": "https://github.com",
+                            "icon": "github"
+                        }
+                    ]
+                }
+            }
+        ],
+        "seo": {
+            "meta_title": "Cruse Technologies – Software, AI Tools & Apps for Business & Consumers",
+            "meta_description": "Cruse Technologies builds productivity apps, AI solutions like Hessie and Tessa, and custom software that empowers businesses and individuals.",
+            "accessibility": [
+                "high_contrast",
+                "screen_reader_support",
+                "keyboard_navigation"
+            ]
+        }
+    }
+}
