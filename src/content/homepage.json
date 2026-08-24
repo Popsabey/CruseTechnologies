@@ -10,7 +10,7 @@
                         { "label": "Products", "href": "#products" },
                         { "label": "Solutions", "href": "#solutions" },
                         { "label": "About us", "href": "#about" },
-                        { "label": "Contact Us", "href": "mailto:info@crusehq.com" }
+                        { "label": "Contact Us", "href": "mailto:developer@crusehq.com" }
                     ]
                 }
             },
@@ -21,7 +21,7 @@
                     "headline": "Powering the next billion users for maximum productivity",
                     "subheadline": "We're at the forefront of enabling users maximize potentials through software",
                     "supporting_text": "Software solutions for teams, individuals, and enterprises.",
-                    "cta": { "label": "Contact Us →", "href": "mailto:info@crusehq.com" }
+                    "cta": { "label": "Contact Us →", "href": "mailto:developer@crusehq.com" }
                 }
             },
             {
@@ -131,7 +131,7 @@
                 "content": {
                     "headline": "Ready to Elevate Your Tech Experience?",
                     "sub_text": "Talk with our product experts.",
-                    "cta": { "label": "Contact Us →", "href": "mailto:info@crusehq.com" }
+                    "cta": { "label": "Contact Us →", "href": "mailto:developer@crusehq.com" }
                 }
             },
             {
@@ -139,7 +139,7 @@
                 "type": "footer",
                 "content": {
                     "logo_text": "CruseTech",
-                    "email": "info@crusehq.com",
+                    "email": "developer@crusehq.com",
                     "copyright": "© 2026 Cruse Technologies. All rights reserved."
                 }
             }
