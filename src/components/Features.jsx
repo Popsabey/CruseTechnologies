@@ -1,48 +1,38 @@
 import React from 'react';
-import { Code, Cpu, BarChart3, Users } from 'lucide-react';
-
-const iconMap = {
-    code_icon: Code,
-    cpu_icon: Cpu,
-    chart_icon: BarChart3,
-    people_icon: Users
-};
+import { Code2, Cpu, TrendingUp, Users } from 'lucide-react';
 
 const Features = ({ content }) => {
-    const { items } = content;
+  if (!content) return null;
 
-    return (
-        <section id="features" className="py-20 bg-white relative">
-            <div className="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                    <div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Unified Platform</h2>
-                        <p className="text-lg text-slate-500 mb-8">Everything you need to build and scale your software operations.</p>
-                        <a href="mailto:crusehq@gmail.com" className="text-blurple font-bold hover:text-blurple-dark inline-flex items-center">
-                            Contact Sales <span aria-hidden="true" className="ml-2">→</span>
-                        </a>
-                    </div>
+  const getIcon = (idx) => {
+    switch (idx) {
+      case 0: return <Code2 size={24} />;
+      case 1: return <Cpu size={24} />;
+      case 2: return <TrendingUp size={24} />;
+      case 3: return <Users size={24} />;
+      default: return <Code2 size={24} />;
+    }
+  };
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-x-8">
-                        {items.map((feature, idx) => {
-                            const Icon = iconMap[feature.icon] || Code;
-                            return (
-                                <div key={idx}>
-                                    <div className="mb-4 text-blurple">
-                                        <Icon size={24} />
-                                    </div>
-                                    <h3 className="text-base font-bold text-slate-900 mb-2">{feature.title}</h3>
-                                    <p className="text-slate-500 text-sm leading-relaxed">
-                                        {feature.description}
-                                    </p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
+  return (
+    <section id="solutions" className="section" style={{background: 'rgba(255,255,255,0.5)'}}>
+      <div className="container">
+        <div className="grid-4">
+          {content.items.map((item, idx) => (
+            <div key={idx} className="card" style={{border: 'none', background: 'transparent', boxShadow: 'none', padding: '1rem'}}>
+              <div className="card-icon" style={{background: 'white', boxShadow: 'var(--shadow-soft)'}}>
+                {getIcon(idx)}
+              </div>
+              <h3 className="heading-md" style={{fontSize: '1.25rem'}}>{item.title}</h3>
+              <p className="text-light">
+                {item.description}
+              </p>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Features;

@@ -4,108 +4,73 @@
             {
                 "id": "navbar",
                 "type": "navigation",
-                "purpose": "Primary global navigation",
-                "layout": "horizontal_sticky",
                 "content": {
                     "logo_text": "CruseTech",
                     "links": [
-                        {
-                            "label": "Products",
-                            "href": "#products"
-                        },
-                        {
-                            "label": "Solutions",
-                            "href": "#features"
-                        },
-                        {
-                            "label": "About us",
-                            "href": "#about"
-                        }
-                    ],
-                    "actions": [
-                        {
-                            "label": "Contact Us",
-                            "type": "primary",
-                            "href": "mailto:crusehq@gmail.com"
-                        }
+                        { "label": "Products", "href": "#products" },
+                        { "label": "Solutions", "href": "#solutions" },
+                        { "label": "About us", "href": "#about" },
+                        { "label": "Contact Us", "href": "mailto:info@crusehq.com" }
                     ]
                 }
             },
             {
                 "id": "hero",
                 "type": "hero",
-                "purpose": "Introduce value proposition",
-                "layout": "centered_with_graphic",
                 "content": {
                     "headline": "Powering the next billion users for maximum productivity",
                     "subheadline": "We're at the forefront of enabling users maximize potentials through software",
                     "supporting_text": "Software solutions for teams, individuals, and enterprises.",
-                    "actions": [
-                        {
-                            "label": "Contact Us",
-                            "type": "primary",
-                            "href": "mailto:crusehq@gmail.com"
-                        }
-                    ]
-                },
-                "visuals": {
-                    "placeholder": ""
+                    "cta": { "label": "Contact Us →", "href": "mailto:info@crusehq.com" }
                 }
             },
             {
-                "id": "product_showcase",
-                "type": "grid_3_col",
-                "purpose": "Showcase products",
+                "id": "products",
+                "type": "product_showcase",
                 "content": {
+                    "headline": "Our Products",
                     "items": [
                         {
                             "id": "hessie",
                             "title": "Hessie — Work Assistant",
                             "description": "AI-powered assistant boosting productivity, scheduling & workflow.",
-                            "icon": "hessie_icon",
-                            "action": {
-                                "label": "Visit Website",
-                                "href": "https://gethessie.com"
-                            }
+                            "cta": { "label": "Visit Website →", "href": "#" }
                         },
                         {
                             "id": "tessa",
                             "title": "Tessa — Customer Support AI",
                             "description": "Automate support conversations with AI that speaks human.",
-                            "icon": "tessa_icon",
-                            "action": {
-                                "label": "Visit Website",
-                                "href": "https://tessahq.com"
-                            }
+                            "cta": { "label": "Visit Website →", "href": "#" }
+                        },
+                        {
+                            "id": "unified",
+                            "title": "Unified Platform",
+                            "description": "Everything you need to build and scale your software operations.",
+                            "cta": { "label": "Contact Sales →", "href": "#" }
                         }
                     ]
                 }
             },
             {
-                "id": "features",
-                "type": "icon_grid",
-                "purpose": "Communicate strengths",
+                "id": "solutions",
+                "type": "features",
                 "content": {
                     "items": [
                         {
                             "title": "Custom Software & App Development",
-                            "description": "Tailored solutions built for your specific business needs.",
-                            "icon": "code_icon"
+                            "description": "Tailored solutions built for your specific business needs."
                         },
                         {
                             "title": "AI Solutions & Automation",
-                            "description": "Leveraging cutting-edge AI to automate complex workflows.",
-                            "icon": "cpu_icon"
+                            "description": "Leveraging cutting-edge AI to automate complex workflows."
                         },
                         {
                             "title": "Productivity Tools",
-                            "description": "Tools designed to streamline operations and save time.",
-                            "icon": "chart_icon"
+                            "description": "Tools designed to streamline operations and save time."
                         },
                         {
                             "title": "Customer Success Platforms",
-                            "description": "Enhancing customer relationships through intelligent engagement.",
-                            "icon": "people_icon"
+                            "description": "Enhancing customer relationships through intelligent engagement."
                         }
                     ]
                 }
@@ -113,7 +78,6 @@
             {
                 "id": "about",
                 "type": "text_block",
-                "purpose": "Company description",
                 "content": {
                     "headline": "About Us",
                     "text": "At CruseTech, we are dedicated to building intelligent solutions that empower the next generation of businesses and individuals. Whether it's through our productivity tools or custom enterprise software, our mission is to unlock maximum potential through technology."
@@ -121,9 +85,11 @@
             },
             {
                 "id": "why_choose_us",
-                "type": "list_3_point",
-                "purpose": "Differentiators",
+                "type": "list_points",
                 "content": {
+                    "headline": "Why CruseTech",
+                    "subheadline": "A complete toolkit for the modern web.",
+                    "description": "We handle the complexities of software so you can focus on your business logic and customer experience.",
                     "items": [
                         {
                             "title": "Proven Tech Expertise",
@@ -142,63 +108,41 @@
             },
             {
                 "id": "testimonials",
-                "type": "slider_or_grid",
-                "purpose": "Social proof",
+                "type": "testimonials",
                 "content": {
+                    "headline": "Testimonials",
                     "items": [
                         {
                             "quote": "Cruse Technologies transformed how we handle customer inquiries. Tessa is a game changer.",
                             "author": "Sarah Jenkins",
-                            "title": "VP of Operations",
-                            "company": "TechStream"
+                            "title": "VP of Operations, TechStream"
                         },
                         {
                             "quote": "Hessie has saved our team countless hours on scheduling and admin tasks.",
                             "author": "David Chen",
-                            "title": "Product Manager",
-                            "company": "CreativeFlow"
+                            "title": "Product Manager, CreativeFlow"
                         }
                     ]
                 }
             },
             {
                 "id": "cta_footer",
-                "type": "centered_box",
-                "purpose": "Final conversion",
+                "type": "cta",
                 "content": {
                     "headline": "Ready to Elevate Your Tech Experience?",
                     "sub_text": "Talk with our product experts.",
-                    "actions": [
-                        {
-                            "label": "Contact Us",
-                            "type": "primary",
-                            "href": "mailto:crusehq@gmail.com"
-                        }
-                    ]
+                    "cta": { "label": "Contact Us →", "href": "mailto:info@crusehq.com" }
                 }
             },
             {
                 "id": "footer",
-                "type": "columns",
-                "purpose": "Legal and contact",
+                "type": "footer",
                 "content": {
-                    "contact": {
-                        "email": "info@crusehq.com",
-                        "phone": ""
-                    },
-                    "legal_links": [],
-                    "social_links": []
+                    "logo_text": "CruseTech",
+                    "email": "info@crusehq.com",
+                    "copyright": "© 2026 Cruse Technologies. All rights reserved."
                 }
             }
-        ],
-        "seo": {
-            "meta_title": "CruseTech – Software, AI Tools & Apps for Business & Consumers",
-            "meta_description": "CruseTech builds productivity apps, AI solutions like Hessie and Tessa, and custom software that empowers businesses and individuals.",
-            "accessibility": [
-                "high_contrast",
-                "screen_reader_support",
-                "keyboard_navigation"
-            ]
-        }
+        ]
     }
 }

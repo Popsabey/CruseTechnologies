@@ -1,38 +1,32 @@
 import React from 'react';
-import logo from '../assets/logo.png';
-import { Linkedin, Twitter, Github } from 'lucide-react';
-
-const iconMap = {
-    linkedin: Linkedin,
-    twitter: Twitter,
-    github: Github
-};
 
 const Footer = ({ content }) => {
-    const { contact, social_links } = content;
+  if (!content) return null;
 
-    return (
-        <footer className="bg-slate-50 pt-20 pb-10">
-            <div className="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row justify-between items-center mb-10">
-                    <div className="mb-6 md:mb-0 flex items-center gap-3">
-                        <img src={logo} alt="CruseTech Logo" className="w-8 h-8 object-contain" />
-                        <span className="text-xl font-bold text-slate-900 block">CruseTech</span>
-                    </div>
-
-                    <div className="text-right">
-                        <a href={`mailto:${contact.email}`} className="text-slate-500 hover:text-blurple transition-colors font-medium">
-                            {contact.email}
-                        </a>
-                    </div>
-                </div>
-
-                <div className="border-t border-slate-200 pt-8 text-sm text-slate-400 text-center md:text-left">
-                    <p>&copy; {new Date().getFullYear()} Cruse Technologies. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-    );
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-top">
+          <a href="/" className="footer-logo">
+            {content.logo_text}
+          </a>
+          <div>
+            <a href={`mailto:${content.email}`} style={{color: 'white', fontWeight: 500}}>
+              {content.email}
+            </a>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <p>{content.copyright}</p>
+          <div style={{display: 'flex', gap: '1rem'}}>
+            <a href="#products">Products</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#about">About</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
