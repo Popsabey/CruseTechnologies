@@ -37,7 +37,7 @@ export default function AuditModal({ isOpen, onClose }) {
           'Primary Area to Automate': formData.primaryBottleneck || 'Not specified',
           'Current Software Tools': formData.tools || 'Not provided',
           'Bottleneck Description': formData.notes || 'None',
-          '_subject': `"New Operations Audit Request from ${formData.name || '}`",
+          '_subject': `New Operations Audit Request from ${formData.name || ''}`,
           '_template': 'table'
         })
       });
